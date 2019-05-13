@@ -21,7 +21,7 @@ The data analysis was done by running *Cognition* on the given test laptop and u
 For stress-testing, we used a program called *CPUSTRES* to generate artificial CPU or GPU loads as desired, and the effect of this on *Cognition* values was observed. We found that there was absolutely no effect on either the mean or the standard deviation in the values obtained at any level of load possible, ranging from 0% to 99%. At 100% CPU load, we found that sometimes the light would flash in *Cognition* and the solenoid would consequently actuate, but *Cognition* would not read the value, thereby implying that the high background load prevents *Cognition* from getting the maximum number of values it can get, but this only affects the size of the sample space obtained, and still has no effect on statistics. This is to be expected, because *Cognition* was designed to be resistant to background loads by acquiring a very high priority when the application is started. Thus, our solution held up to the stress tests.
 
 For final packaging of the product, we attached male barrel jack headers to the ends of the wall wart used to power the solenoid, the solenoid itself and the other power supplies used. We then soldered female barrel jack headers to the appropriate places on the protoboard, to remove the need for careful positioning of wires entirely. Then, we designed an acrylic box for the whole setup in Solidworks, laser cut the plates and screwed the box around the protoboard, with appropriately-sized holes snapping around the wires for the female barrel jack headers. This completed the black-box setup that is user-friendly as well as idiot-proof.
-![Finished Box](https://github.com/adityahota/NASACalibration/blob/master/Box_Fixed.JPG "Finished Box")
+![Finished Box](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Box_Fixed.JPG "Finished Box")
 
 ## Week 3: Baseline Demo
 **April 27, 2019**
@@ -32,14 +32,14 @@ On the Windows side, we got weird results when using our own program to measure 
 Instead of using our original Windows C program, we would instead use the *Cognition* program developed in part by the lab we were working with. This software has a calibration mode which allows the reaction times to be logged, after a white light is shown on the screen. We used the same mbed setup, where we would look for a white light flash, but instead actuated the solenoid to hit the spacebar as quickly as possible. This helped mimic the "ideal human" with zero latency.
 
 We also added a pressure sensor to the spacebar, to account for the solenoid's actuation delay. It takes some time for the end of the solenoid to hit the spacebar; adding a pressure sensor and finding the time to hit the spacebar after the light flash helped us account for this and subtract it out.
-![Pressure Sensor on Laptop](https://github.com/adityahota/NASACalibration/blob/master/Stand_Laptop.JPG "Pressure Sensor on Laptop")
+![Pressure Sensor on Laptop](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Stand_aptop.JPG "Pressure Sensor on Laptop")
 
 Furthermore, we made a holder for the solenoid, so we could put it at a constant height above the laptop, instead of holding it.
-![Stand SolidWorks](https://github.com/adityahota/NASACalibration/blob/master/full%20stand.PNG "Stand SolidWorks")
+![Stand SolidWorks](https://raw.githubusercontent.com/adityahota/NASACalibration/master/full%20stand.JPG "Stand SolidWorks")
 
 Finally, we put all the circuitry from last week onto a protoboard, because we were getting tired of jumpers!
 
-![Protoboard](https://github.com/adityahota/NASACalibration/blob/master/Protoboard.JPG "Protoboard")
+![Protoboard](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Protoboard.JPG "Protoboard")
 
 ## Week 2: Milestone 2 Demo
 **April 19, 2019**
@@ -48,7 +48,7 @@ For our second milestone, we incorporated part of the feedback loop for our proj
 On the Windows side, we added a command to play the beep noise---we chose to use the `beep()` function in `Windows.h`, to allow for OS-level sound generation, instead of having to rely on another program, mathematical calculations, or an external file to generate a noise. These other options could have introduced delays in our timing detection, which could throw off our results.
 
 On the mbed side, we made circuitry to take noise from the laptop, amplify it (with an op-amp), and feed it into an input pin. We then could take this amplified noise as a rising edge and figure out when the computer recevied the spacebar press. Here is a picture of our (rather messy) circuit:
-![Sound Circuit](https://github.com/adityahota/NASACalibration/blob/master/Sound_Circuit.JPG "Sound Circuit")
+![Sound Circuit](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Sound_Circuit.JPG "Sound Circuit")
 
 ## Week 1: Milestone 1 Demo
 **April 12, 2019**
@@ -57,4 +57,4 @@ Working up to the first milestone demo, we developed our first ideas of how to a
 Our first step towards this was enabling us to look for a fall edge on the mbed. We created a voltage divider using a photoresistor, where the output voltage would drop when light was detected. Then, we setup an mbed timer which would start when the falling edge was detected and fire an interrupt. For the milestone demo, our goal was to essentially figure out how to setup the timer, detect the falling edge, and fire an interrupt. The biggest challenge was getting familiar with bare metal programming on mbed, which we used in lieu of the mbed OS function calls to reduce overhead and timing delays.
 
 For the milestone, we also created the Windows C program which would display the square. A screenshot of the C program is shown below:
-![Windows C Program](https://github.com/adityahota/NASACalibration/blob/master/Windows_Program.PNG "Windows C Program")
+![Windows C Program](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Windows_Program.JPG "Windows C Program")
