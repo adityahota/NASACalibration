@@ -32,10 +32,10 @@ On the Windows side, we got weird results when using our own program to measure 
 Instead of using our original Windows C program, we would instead use the *Cognition* program developed in part by the lab we were working with. This software has a calibration mode which allows the reaction times to be logged, after a white light is shown on the screen. We used the same mbed setup, where we would look for a white light flash, but instead actuated the solenoid to hit the spacebar as quickly as possible. This helped mimic the "ideal human" with zero latency.
 
 We also added a pressure sensor to the spacebar, to account for the solenoid's actuation delay. It takes some time for the end of the solenoid to hit the spacebar; adding a pressure sensor and finding the time to hit the spacebar after the light flash helped us account for this and subtract it out.
-![Pressure Sensor on Laptop](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Stand_aptop.JPG "Pressure Sensor on Laptop")
+![Pressure Sensor on Laptop](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Stand_Laptop.JPG "Pressure Sensor on Laptop")
 
 Furthermore, we made a holder for the solenoid, so we could put it at a constant height above the laptop, instead of holding it.
-![Stand SolidWorks](https://raw.githubusercontent.com/adityahota/NASACalibration/master/full%20stand.JPG "Stand SolidWorks")
+![Stand SolidWorks](https://raw.githubusercontent.com/adityahota/NASACalibration/master/full%20stand.PNG "Stand SolidWorks")
 
 Finally, we put all the circuitry from last week onto a protoboard, because we were getting tired of jumpers!
 
