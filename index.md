@@ -57,4 +57,4 @@ Working up to the first milestone demo, we developed our first ideas of how to a
 Our first step towards this was enabling us to look for a fall edge on the mbed. We created a voltage divider using a photoresistor, where the output voltage would drop when light was detected. Then, we setup an mbed timer which would start when the falling edge was detected and fire an interrupt. For the milestone demo, our goal was to essentially figure out how to setup the timer, detect the falling edge, and fire an interrupt. The biggest challenge was getting familiar with bare metal programming on mbed, which we used in lieu of the mbed OS function calls to reduce overhead and timing delays.
 
 For the milestone, we also created the Windows C program which would display the square. A screenshot of the C program is shown below:
-![Windows C Program](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Windows_Program.JPG "Windows C Program")
+![Windows C Program](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Windows_Program.PNG "Windows C Program")
