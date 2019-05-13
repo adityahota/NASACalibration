@@ -1,16 +1,29 @@
 # Improving the Measurement of Reaction Time Tests on Windows Laptops
 ESE 350 Final Project, Spring 2019
+
 [Aditya Hota](https://github.com/adityahota) and [Lakshay Sharma](https://github.com/lakshay2010sharma)
+
 In collaboration with [Dr. Mathias Basner, University of Pennsylvania School of Medicine](https://www.med.upenn.edu/uep/faculty_basner.html)
 
 
 ## Week 5: Public Demo
 **May 10, 2019**
 Before the public demo, we had a chance to demo our product to Dr. Basner and test it out on multiple other laptops, three of which were the same model that was newer than the one we had been using. This gave us a chance to collect and analyze four times the amount of data we previously had, with the bulk of it coming from keyboards of much higher quality. We ran the calibration plan as before, and in addition to mean and standard deviation, we calculated other statistical information such as 95% confidence intervals and 95th percentile. We also plotted a scatter plot of the values obtained, as well as a histogram, that greatly helped in visualizing the trends in the data, the precision in the calibration setting for the spacebar used and the quality of the keyboard. The appropriate graphs and tables are shown below:
-`Insert images and tables here`
+
+![Data Table](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Data_Table.png "Data Table")
+![Laptop 1 H](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_1_Hist.png "Laptop 1 H")
+![Laptop 1 T](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_1_Plot.png "Laptop 1 T")
+![Laptop 2 H](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_2_Hist.png "Laptop 2 H")
+![Laptop 2 T](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_2_Plot.png "Laptop 2 T")
+![Laptop 3 H](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_3_Hist.png "Laptop 3 H")
+![Laptop 3 T](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_3_Plot.png "Laptop 3 T")
+![Laptop 4 H](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_4_Hist.png "Laptop 4 H")
+![Laptop 4 T](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Laptop_4_Plot.png "Laptop 4 T")
+![Mouse 2 H](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Mouse_2_Hist.png "Mouse 2 H")
+![Mouse 2 T](https://raw.githubusercontent.com/adityahota/NASACalibration/master/Mouse_2_Plot.png "Mouse 2 T")
+
 
 In addition, we also did the same process for mouse clicks, since a user in *Cognition* can provide his reaction using either the spacebar or a physical left mouse click button. The data obtained showed that the mouse click not only has more variability for the calibration delay, but also changes significantly based on the center of the actuation force. Therefore, the mouse click is a significantly worse method of input compared to the spacebar on the laptops tested, as far as calibration delay is concerned.
-`Insert table`
 
 ## Week 4: Reach Demo
 **May 3, 2019**
